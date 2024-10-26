@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quản Lý Mượn Sách</h1>
+
+        <!-- Form để thêm thành viên mới -->
+        <form id="addMemberForm">
+            <h2>Thêm Thành Viên Mới</h2>
+            <input type="text" id="memberName" placeholder="Tên Thành Viên" required>
+            <input type="date" id="memberDob" placeholder="Ngày Sinh" required>
+            <input type="text" id="memberAddress" placeholder="Địa Chỉ" required>
+            <input type="text" id="bookTitle" placeholder="Tên Sách" required>
+            <input type="date" id="borrowDate" placeholder="Ngày Mượn" required>
+            <button type="submit">Thêm</button>
+        </form>
+
+        <!-- Bảng hiển thị danh sách người mượn sách -->
+        <table id="borrowTable">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Thành Viên</th>
+                    <th>Ngày Sinh</th>
+                    <th>Địa Chỉ</th>
+                    <th>Tên Sách</th>
+                    <th>Ngày Mượn</th>
+                    <th>Trạng Thái</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody id="borrowList">
+                <!-- Dữ liệu sẽ được thêm ở đây bằng JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>
